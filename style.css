@@ -1,0 +1,307 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fffaf2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BASIC SYTLE */
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #61453d;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #61453d;
+}
+
+/* STYLE NAV BAR */
+
+ul {
+  list-style-type: none;
+  background-color: #738872;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 5em;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  text-size: 1.3em;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+li a:hover {
+  background-color:#97946B;
+}
+
+
+
+
+/* STYLE MISSION IMAGE GRID */
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__item .overlay {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.3);;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery__item .overlay:hover  {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-areas:
+    "emmision2 snowyfactory snowyfactory urbanarea2"
+    "emmision1 factory2 factory2 urbanarea2"
+    "windmills factory2 factory2 bottle";
+  grid-gap: 16px 16px;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#emmision2 {
+  grid-area: emmision2;
+}
+
+#emmision1 {
+  grid-area: emmision1;
+}
+
+#snowyfactory {
+  grid-area: snowyfactory;
+}
+
+#factory2 {
+  grid-area: factory2;
+}
+
+#windmills {
+  grid-area: windmills;
+}
+
+#urbanarea2 {
+  grid-area: urbanarea2;
+}
+
+#bottle {
+  grid-area: bottle;
+}  
+
+
+/* STYLE PROBLEM STATEMENT */
+
+.about-us-section {
+  padding: 0;
+  margin: 0;
+}
+ .more-info {
+  padding: 0;
+  margin-left: 100px;
+}
+
+.more-info h2 {
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.individual-profile img{
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.individual-profile {
+  /* width: 25%; */
+  /* position: relative; */
+  margin: 80px;
+}
+
+.individual-profile p{
+  text-align: center;
+  font-size: 20px;
+  /* position: absolute;
+  top: 80%;
+  right: 50%; */
+}
+
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+}
+/*
+.problem-statement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: left;
+  margin: 50px 0 0 0;
+}
+
+.more-info .problem-statement h2 {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.problem-statement p {
+  margin: 30px 0 0 30px;
+  padding: 0;
+}
+
+.about-us-section {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+
+
+/* FURTHUR STEPS STYLES */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.content-item {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e5ccb3;
+  box-shadow: 10px 10px 5px #b18c68;
+  width: 50%;
+}
+
+.content-item h2, .content-item p {
+  margin: 20px;
+  padding: 0;
+}
+
+.content-item h3 {
+  margin: 20px;
+  padding: 0;
+  color: #68514b;
+}
+
+.content-item ul {
+  background-color: #e5ccb3;
+  margin: 20px;
+  padding: 0;
+  text-align: left;
+}
+
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.steps {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+/* MAP CONTAINER */
+.AQI-info {
+  display: flex;
+  margin: 40px;
+  padding:0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-info {
+  margin: auto auto;
+}
+
+.bg-info p {
+  width: 90%;
+}
+
+.bg-info h2 {
+  margin:0;
+  padding:0;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+
+/* quiz */
+
+/* start button + styling */
+.start_btn {
+  position: absolute;
+  top: 210%;
+  left: 50%;
+}
+
+.start_btn button {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding: 15px 30px; 
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #5F7055;
+}
